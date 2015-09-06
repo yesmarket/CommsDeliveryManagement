@@ -30,6 +30,8 @@ namespace Service
         {
             try
             {
+                _logger.Info("Received notification.");
+
                 _notificationValidator.ValidateAndThrow(notification);
 
                 var ndo = _notificationMapper.MapToDomainObject(notification);

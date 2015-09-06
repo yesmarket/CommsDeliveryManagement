@@ -40,9 +40,22 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="yesmarket.DataAccess">
+      <HintPath>..\packages\yesmarket.DataAccess.1.0.1\lib\net45\yesmarket.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="yesmarket.DateTimes">
+      <HintPath>..\packages\yesmarket.DateTimes.1.0.0\lib\net45\yesmarket.DateTimes.dll</HintPath>
+    </Reference>
+    <Reference Include="yesmarket.Mapping">
+      <HintPath>..\packages\yesmarket.Mapping.1.0.0\lib\net45\yesmarket.Mapping.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommsDeliveryManager.cs" />
+    <Compile Include="Mapping\INotificationMapper.cs" />
+    <Compile Include="Mapping\IPayloadXmlSerializer.cs" />
+    <Compile Include="Mapping\NotificationMapper.cs" />
+    <Compile Include="Mapping\PayloadXmlSerializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

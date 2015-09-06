@@ -43,6 +43,7 @@
     <Compile Include="ICommsDeliveryManager.cs" />
     <Compile Include="Notification.cs" />
     <Compile Include="Payload.cs" />
+    <Compile Include="PayloadType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SmsPayload.cs" />
   </ItemGroup>

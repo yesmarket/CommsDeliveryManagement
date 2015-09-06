@@ -1,5 +1,5 @@
 using System;
-using yesmarket.Entities;
+using yesmarket.DataAccess.Entities;
 
 namespace Domain.DataAccess.Contracts.Entities
 {

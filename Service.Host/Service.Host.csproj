@@ -86,17 +86,20 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="yesmarket.Entities">
-      <HintPath>..\packages\yesmarket.Entities.1.0.0\lib\net45\yesmarket.Entities.dll</HintPath>
+    <Reference Include="yesmarket.DataAccess">
+      <HintPath>..\packages\yesmarket.DataAccess.1.0.1\lib\net45\yesmarket.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="yesmarket.DataAccess.NHibernate">
+      <HintPath>..\packages\yesmarket.DataAccess.NHibernate.1.0.0\lib\net45\yesmarket.DataAccess.NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="yesmarket.DateTimes">
+      <HintPath>..\packages\yesmarket.DateTimes.1.0.0\lib\net45\yesmarket.DateTimes.dll</HintPath>
     </Reference>
     <Reference Include="yesmarket.Initialisation">
       <HintPath>..\packages\yesmarket.Initialisation.1.0.0\lib\net45\yesmarket.Initialisation.dll</HintPath>
     </Reference>
     <Reference Include="yesmarket.Mapping">
       <HintPath>..\packages\yesmarket.Mapping.1.0.0\lib\net45\yesmarket.Mapping.dll</HintPath>
-    </Reference>
-    <Reference Include="yesmarket.NHibernate">
-      <HintPath>..\packages\yesmarket.NHibernate.1.0.0\lib\net45\yesmarket.NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="yesmarket.SimpleInjectorExtensions">
       <HintPath>..\packages\yesmarket.SimpleInjectorExtensions.1.0.0\lib\net45\yesmarket.SimpleInjectorExtensions.dll</HintPath>

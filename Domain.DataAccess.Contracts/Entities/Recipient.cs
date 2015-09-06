@@ -1,6 +1,6 @@
 using System;
 using Domain.DataAccess.Contracts.Types;
-using yesmarket.Entities;
+using yesmarket.DataAccess.Entities;
 
 namespace Domain.DataAccess.Contracts.Entities
 {

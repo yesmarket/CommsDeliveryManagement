@@ -37,8 +37,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="yesmarket.Entities">
-      <HintPath>..\packages\yesmarket.Entities.1.0.0\lib\net45\yesmarket.Entities.dll</HintPath>
+    <Reference Include="yesmarket.DataAccess">
+      <HintPath>..\packages\yesmarket.DataAccess.1.0.1\lib\net45\yesmarket.DataAccess.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

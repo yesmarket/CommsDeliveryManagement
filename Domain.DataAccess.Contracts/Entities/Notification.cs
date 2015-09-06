@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Xml.Linq;
-using yesmarket.Entities;
+using yesmarket.DataAccess.Entities;
 
 namespace Domain.DataAccess.Contracts.Entities
 {

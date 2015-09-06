@@ -12,5 +12,15 @@ namespace Domain.Contracts
         public IList<string> ReplyToList { get; set; }
         public string Subject { get; set; }
         public IList<string> To { get; set; }
+
+        public override PayloadType GetPayloadType()
+        {
+            return PayloadType.Email;
+        }
+
+        public override IEnumerable<string> GetRecipients()
+        {
+            return To;
+        }
     }
 }
