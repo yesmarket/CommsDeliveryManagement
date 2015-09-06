@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Domain.DataAccess.Contracts.Entities.Notification, Domain.DataAccess.Contracts" schema="dbo" table="Notification">
+    <id name="Id">
+      <generator class="guid" />
+    </id>
+    <property name="DateAdded" not-null="true" />
+    <property name="Type" not-null="true" />
+    <property name="Payload" type="yesmarket.NHibernate.Types.XElementType, yesmarket.NHibernate" not-null="true" />
+    <set name="Recipients" inverse="true" cascade="all-delete-orphan" access="nosetter.camelcase-underscore">
+      <key foreign-key="FK_RECI_NOTI">
+        <column name="NotificationId" />
+      </key>
+      <one-to-many class="Domain.DataAccess.Contracts.Entities.Recipient, Domain.DataAccess.Contracts" />
+    </set>
+    <set name="NotificationDetails" inverse="true" cascade="all-delete-orphan" access="nosetter.camelcase-underscore">
+      <key foreign-key="FK_DETA_NOTI">
+        <column name="NotificationId" />
+      </key>
+      <one-to-many class="Domain.DataAccess.Contracts.Entities.NotificationDetail, Domain.DataAccess.Contracts" />
+    </set>
+    <set name="Attempts" inverse="true" cascade="all-delete-orphan" access="nosetter.camelcase-underscore">
+      <key foreign-key="FK_ATTE_NOTI">
+        <column name="NotificationId" />
+      </key>
+      <one-to-many class="Domain.DataAccess.Contracts.Entities.Attempt, Domain.DataAccess.Contracts" />
+    </set>
+    <one-to-one name="Provider" class="Domain.DataAccess.Contracts.Entities.Provider, Domain.DataAccess.Contracts" constrained="false" cascade="all" />
+  </class>
+</hibernate-mapping>

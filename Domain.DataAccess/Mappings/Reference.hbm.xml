@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Domain.DataAccess.Contracts.Entities.Reference, Domain.DataAccess.Contracts" schema="dbo" table="Reference">
+    <id name="Id">
+      <generator class="guid" />
+    </id>
+    <many-to-one name="Recipient" foreign-key="FK_REFE_RECI" class="Domain.DataAccess.Contracts.Entities.Recipient, Domain.DataAccess.Contracts" column="RecipientId" not-null="true" />
+    <property name="Number" />
+  </class>
+</hibernate-mapping>
