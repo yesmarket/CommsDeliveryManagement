@@ -2,7 +2,7 @@
 using DataContracts = Service.Contracts;
 using DomainObjects = Domain.Contracts;
 
-namespace Service.Mapping
+namespace Service.Host.Mapping
 {
     public class NotificationMapper : INotificationMapper
     {

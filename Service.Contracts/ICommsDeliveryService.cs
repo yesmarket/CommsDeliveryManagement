@@ -12,6 +12,6 @@ namespace Service.Contracts
         [ServiceKnownType("RegisterKnownTypes", typeof(ServiceKnownTypeResolver<Payload>))]
         [FaultContract(typeof(Fault))]
         [FaultContract(typeof(ValidationFault))]
-        Guid Notify(Notification notification);
+        Guid Notify(Notification notification, bool bypassQueuing = false);
     }
 }

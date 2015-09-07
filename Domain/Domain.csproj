@@ -46,6 +46,9 @@
     <Reference Include="yesmarket.DateTimes">
       <HintPath>..\packages\yesmarket.DateTimes.1.0.0\lib\net45\yesmarket.DateTimes.dll</HintPath>
     </Reference>
+    <Reference Include="yesmarket.Initialisation">
+      <HintPath>..\packages\yesmarket.Initialisation.1.0.0\lib\net45\yesmarket.Initialisation.dll</HintPath>
+    </Reference>
     <Reference Include="yesmarket.Mapping">
       <HintPath>..\packages\yesmarket.Mapping.1.0.0\lib\net45\yesmarket.Mapping.dll</HintPath>
     </Reference>
@@ -56,6 +59,7 @@
     <Compile Include="Mapping\IPayloadXmlSerializer.cs" />
     <Compile Include="Mapping\NotificationMapper.cs" />
     <Compile Include="Mapping\PayloadXmlSerializer.cs" />
+    <Compile Include="NotificationRequestConsumer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

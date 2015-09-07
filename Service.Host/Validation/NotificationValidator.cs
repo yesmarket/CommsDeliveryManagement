@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using Service.Contracts;
 
-namespace Service.Validation
+namespace Service.Host.Validation
 {
     public class NotificationValidator : AbstractValidator<Notification>
     {

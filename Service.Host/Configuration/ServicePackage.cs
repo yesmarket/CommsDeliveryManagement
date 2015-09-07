@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using Service.Contracts;
-using Service.Mapping;
-using Service.Validation;
+using Service.Host.Mapping;
+using Service.Host.Validation;
 using SimpleInjector;
 using SimpleInjector.Packaging;
 using yesmarket.Initialisation;

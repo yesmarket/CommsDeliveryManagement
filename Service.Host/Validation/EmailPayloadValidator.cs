@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 using FluentValidation;
 using Service.Contracts;
 
-namespace Service.Validation
+namespace Service.Host.Validation
 {
     public class EmailPayloadValidator : AbstractValidator<EmailPayload>
     {

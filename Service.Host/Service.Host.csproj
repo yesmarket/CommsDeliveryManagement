@@ -114,14 +114,22 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommsDeliveryService.cs" />
     <Compile Include="Configuration\DataAccessPackage.cs" />
     <Compile Include="Configuration\DomainPackage.cs" />
     <Compile Include="Configuration\ServicePackage.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Mapping\AutoMapperConfigurator.cs" />
+    <Compile Include="Mapping\INotificationMapper.cs" />
+    <Compile Include="Mapping\NotificationMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceInitialiser.cs" />
+    <Compile Include="Validation\EmailPayloadValidator.cs" />
+    <Compile Include="Validation\NotificationValidator.cs" />
+    <Compile Include="Validation\PolymorphicValidator.cs" />
+    <Compile Include="Validation\SmsPayloadValidator.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -159,10 +167,6 @@
     <ProjectReference Include="..\Service.Contracts\Service.Contracts.csproj">
       <Project>{081c5132-db69-49f8-b7c3-2bc3359081bd}</Project>
       <Name>Service.Contracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Service\Service.csproj">
-      <Project>{f248b555-d49d-430e-8fdb-33f72f0f7e33}</Project>
-      <Name>Service</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

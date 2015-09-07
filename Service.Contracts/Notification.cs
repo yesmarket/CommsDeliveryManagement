@@ -11,8 +11,5 @@ namespace Service.Contracts
 
         [DataMember]
         public IDictionary<string, string> Details { get; set; }
-
-        [DataMember]
-        public bool QueueDelivery { get; set; }
     }
 }

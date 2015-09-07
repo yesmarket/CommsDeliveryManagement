@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="EmailPayload.cs" />
     <Compile Include="ICommsDeliveryManager.cs" />
+    <Compile Include="INotificationRequestConsumer.cs" />
     <Compile Include="Notification.cs" />
     <Compile Include="Payload.cs" />
     <Compile Include="PayloadType.cs" />

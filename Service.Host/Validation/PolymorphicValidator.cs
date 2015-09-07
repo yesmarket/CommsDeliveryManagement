@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using FluentValidation;
 using FluentValidation.Results;
 
-namespace Service.Validation
+namespace Service.Host.Validation
 {
     public class PolymorphicValidator<TPayload> : AbstractValidator<TPayload> where TPayload : class
     {

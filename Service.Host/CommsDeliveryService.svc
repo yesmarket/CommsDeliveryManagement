@@ -1,5 +1,5 @@
 ﻿<%@ ServiceHost 
     Language="C#" 
     Debug="true" 
-    Service="Service.CommsDeliveryService"  
+    Service="Service.Host.CommsDeliveryService"  
     Factory="SimpleInjector.Integration.Wcf.SimpleInjectorServiceHostFactory, SimpleInjector.Integration.Wcf" %>

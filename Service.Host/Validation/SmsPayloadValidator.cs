@@ -3,7 +3,7 @@ using FluentValidation;
 using PhoneNumbers;
 using Service.Contracts;
 
-namespace Service.Validation
+namespace Service.Host.Validation
 {
     public class SmsPayloadValidator : AbstractValidator<SmsPayload>
     {

@@ -4,6 +4,6 @@ namespace Domain.Contracts
 {
     public interface ICommsDeliveryManager
     {
-        Guid Notify(Notification notification);
+        Guid Notify(Notification notification, bool bypassQueuing = false);
     }
 }

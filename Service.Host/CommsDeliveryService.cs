@@ -1,11 +1,11 @@
 ﻿using System;
 using FluentValidation;
 using NLog;
-using Service.Mapping;
+using Service.Host.Mapping;
 using DataContracts = Service.Contracts;
 using DomainObjects = Domain.Contracts;
 
-namespace Service
+namespace Service.Host
 {
     public class CommsDeliveryService : DataContracts.ICommsDeliveryService
     {
@@ -26,7 +26,7 @@ namespace Service
             _commsDeliveryManager = commsDeliveryManager;
         }
 
-        public Guid Notify(DataContracts.Notification notification)
+        public Guid Notify(DataContracts.Notification notification, bool bypassQueuing = false)
         {
             try
             {
@@ -35,7 +35,7 @@ namespace Service
                 _notificationValidator.ValidateAndThrow(notification);
 
                 var ndo = _notificationMapper.MapToDomainObject(notification);
-                var identifier = _commsDeliveryManager.Notify(ndo);
+                var identifier = _commsDeliveryManager.Notify(ndo, bypassQueuing);
 
                 return identifier;
             }
